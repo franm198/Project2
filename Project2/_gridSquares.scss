@@ -12,43 +12,45 @@
     height: 100px;
     transition: background-color 0.3s ease;
     font-size: 2rem;
+    border-radius: 2px;
+    gap: 10px;
     
-    &#square-1 {
-        border-top: $mainbeige;
-        border-left: $mainbeige;
-    }
+//     // &#square-1 {
+//     //     border-top: $mainbeige;
+//     //     border-left: $mainbeige;
+//     // }
 
-    &#square-2 {
-        border-left:$mainbeige;
-    }
+//     // &#square-2 {
+//     //     border-left:$mainbeige;
+//     // }
 
-    &#square-3 {
-        border-left: $mainbeige;
-        border-bottom: $mainbeige;
-    }
+//     // &#square-3 {
+//     //     border-left: $mainbeige;
+//     //     border-bottom: $mainbeige;
+//     // }
 
-    &#square-4 {
-        border-top: $mainbeige;
-    }
+//     // &#square-4 {
+//     //     border-top: $mainbeige;
+//     // }
 
-    &#square-6 {
-        border-bottom: $mainbeige;
-    }
+//     // &#square-6 {
+//     //     border-bottom: $mainbeige;
+//     // }
 
-    &#square-7 {
-        border-top: $mainbeige;
-        border-right: $mainbeige;
-    }
+//     // &#square-7 {
+//     //     border-top: $mainbeige;
+//     //     border-right: $mainbeige;
+//     // }
 
-    &#square-8 {
-        border-right: $mainbeige;
-    }
+//     // &#square-8 {
+//     //     border-right: $mainbeige;
+//     // }
 
-    &#square-9 { 
-        border-right: $mainbeige;
-        border-bottom: $mainbeige;
+//     // &#square-9 { 
+//     //     border-right: $mainbeige;
+//     //     border-bottom: $mainbeige;
+//     // }
     }
-}
 
 .gridSquare:hover {
     background-color: $accentbeige;

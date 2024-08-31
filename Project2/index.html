@@ -6,9 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>XO</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- Grid for Game Below Here -->
+        <div class="game-title">
+          <h1 class="game-main-heading">O<span>&</span>X</h1>
+        </div>
         <div class="noughts-and-crosses-board">
             <div class="row">
                 <div class="gridSquare" id="square-1"></div>
@@ -27,7 +33,8 @@
             </div>
             <div id="app"></div>
         </div>
-        <div id="gameMessage" class="game-message"></div>
-        <button id="resetButton">Reset Game</button>
+        <!-- <div id="gameMessage" class="game-message"></div>
+        <div class="buttonSection"><button id="resetButton">Reset Game</button> -->
+        <!-- </div> -->
     </body>
 </html>

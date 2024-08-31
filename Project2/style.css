@@ -9,34 +9,8 @@
   height: 100px;
   transition: background-color 0.3s ease;
   font-size: 2rem;
-}
-.gridSquare#square-1 {
-  border-top: #EDE4DB;
-  border-left: #EDE4DB;
-}
-.gridSquare#square-2 {
-  border-left: #EDE4DB;
-}
-.gridSquare#square-3 {
-  border-left: #EDE4DB;
-  border-bottom: #EDE4DB;
-}
-.gridSquare#square-4 {
-  border-top: #EDE4DB;
-}
-.gridSquare#square-6 {
-  border-bottom: #EDE4DB;
-}
-.gridSquare#square-7 {
-  border-top: #EDE4DB;
-  border-right: #EDE4DB;
-}
-.gridSquare#square-8 {
-  border-right: #EDE4DB;
-}
-.gridSquare#square-9 {
-  border-right: #EDE4DB;
-  border-bottom: #EDE4DB;
+  border-radius: 2px;
+  gap: 10px;
 }
 
 .gridSquare:hover {
@@ -47,6 +21,28 @@
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
+  gap: 3%;
+}
+
+.buttonSection {
+  display: block;
+  align-items: right;
+  justify-content: right;
+}
+
+#resetButton {
+  font-family: "Montserrat";
+  font-weight: 500;
+  border: none;
+  background-color: #EDE4DB;
+  align-items: right;
+  justify-content: flex-end;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+  background-color: rgba(200, 188, 176, 0.8117647059);
 }
 
 body {
@@ -57,6 +53,23 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
   color: black;
+}
+
+.game-main-heading {
+  display: flex;
+  font-size: 90px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  width: 90vw;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+span {
+  color: #a17777;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

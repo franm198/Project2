@@ -1,0 +1,23 @@
+// STYLING FOR BUTTON ELEMENTS \\
+
+.buttonSection {
+    display: block;
+    align-items: right;
+    justify-content: right;
+}
+
+#resetButton {
+    font-family: "Montserrat";
+    font-weight: 500;
+    border: none;
+    background-color: $mainbeige;
+    align-items: right;
+    justify-content: flex-end;
+    display: block;
+    transition: background-color 0.3s ease;
+} 
+
+#resetButton:hover {
+    background-color: $accentbeige;
+}
+
