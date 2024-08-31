@@ -1,2 +1,2 @@
 # Project2
-Tic-Tac-Toe
+Noughts-&-Crosses
