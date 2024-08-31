@@ -1,0 +1,7 @@
+// STYLING FOR GRID LAYOUT \\
+
+.noughts-and-crosses-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows:repeat(3, 100px);
+}
