@@ -28,16 +28,43 @@ import './style.css'
 
 let currentPlayer = 'X'; //The Game always begins with Player X
 let gameBoard = ['', '', '', '', '', '', '', '', '']; //This is the 3x3 grid squares
-let gameState = true;
+let gameStateActive = true;
 
 // Player Turns - Handling which player is active \\
 
-function handlePlayerTurn(clickedCellIndex) {
-  if (gameBoard[clickedCellIndex] !== '' || !gameState) {
+function handlePlayerTurn(clickedGridSquareIndex) {
+  if (gameBoard[clickedGridSquareIndex] !== '' || !gameStateActive) {
     return;
   }
-  gameBoard[clickedCellIndex] = currentPlayer;
+  gameBoard[clickedGridSquareIndex] = currentPlayer;
   currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
 }
 
-// 
+// Event Listeners - Adding one for each cell \\
+
+const gridSquare = document.querySelectorAll('.gridSquare');
+
+gridSquare.forEach(gridSquare => {
+  gridSquare.addEventListener('click', gridSquareClicked, false)
+});
+
+// Grid Square Clicks - Handling when the cell is clicked \\
+
+function gridSquareClicked(clickedGridEvent) {
+  const clickedGridSquare = clickedGridEvent.target;
+  const clickedGridSquareIndex = parseInt(clickedGridSquare.id.replace('cell-', '')) - 1;
+
+    if (gameBoard[clickedGridSquareIndex] !== '' || !gameStateActive) {
+      return;
+    }
+
+  handlePlayerTurn(clickedGridSquareIndex);
+  updateUI();
+
+}
+
+function updateUI() {
+  for (let i=0; i < gridSquare.length; i++) {
+    gridSquare[i].innerText = gameBoard[i];
+  }
+}
