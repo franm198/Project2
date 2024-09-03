@@ -6,35 +6,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>XO</title>
         <link rel="stylesheet" href="style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <!-- Grid for Game Below Here -->
-        <div class="game-title">
-          <h1 class="game-main-heading">O<span>&</span>X</h1>
-        </div>
-        <div class="noughts-and-crosses-board">
-            <div class="row">
-                <div class="gridSquare" id="square-1"></div>
-                <div class="gridSquare" id="square-2"></div>
-                <div class="gridSquare" id="square-3"></div>
+         <!-- <div class="game-area">    -->
+            <div class="game-title">
+                <h1 class="game-main-heading">O<span>&</span>X</h1>
             </div>
-            <div class="row">
-                <div class="gridSquare" id="square-4"></div>
-                <div class="gridSquare" id="square-5"></div>
-                <div class="gridSquare" id="square-6"></div>
+            <div class="noughts-and-crosses-board">
+                <div class="row">
+                    <div class="gridSquare" id="square-1"></div>
+                    <div class="gridSquare" id="square-2"></div>
+                    <div class="gridSquare" id="square-3"></div>
+                </div>
+                <div class="row">
+                    <div class="gridSquare" id="square-4"></div>
+                    <div class="gridSquare" id="square-5"></div>
+                    <div class="gridSquare" id="square-6"></div>
+                </div>
+                <div class="row">
+                    <div class="gridSquare" id="square-7"></div>
+                    <div class="gridSquare" id="square-8"></div>
+                    <div class="gridSquare" id="square-9"></div>
+                </div>
             </div>
-            <div class="row">
-                <div class="gridSquare" id="square-7"></div>
-                <div class="gridSquare" id="square-8"></div>
-                <div class="gridSquare" id="square-9"></div>
+            <div class="under-grid-line">
+                <div id="gameMessage" class="game-message"></div>
+                <div class="buttonSection"> 
+                    <button id="resetButton"><svg width="25px" height="25px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.719 12A10.719 10.719 0 0 1 1.28 12h.838a9.916 9.916 0 1 0 1.373-5H8v1H2V2h1v4.2A10.71 10.71 0 0 1 22.719 12z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
+                    </button>
+                </div>
             </div>
-            <div id="app"></div>
-        </div>
-        <!-- <div id="gameMessage" class="game-message"></div>
-        <div class="buttonSection"><button id="resetButton">Reset Game</button> -->
-        <!-- </div> -->
+            <script type="module" src="./src/main.ts"></script>
+         </div>
     </body>
 </html>

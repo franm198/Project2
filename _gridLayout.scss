@@ -1,8 +1,10 @@
 // STYLING FOR GRID LAYOUT \\
 
 .noughts-and-crosses-board {
+    width: 80%;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows:repeat(3, 100px);
-    gap: 3%;
+    gap: 1%;
 }
