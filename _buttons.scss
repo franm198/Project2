@@ -1,15 +1,18 @@
 // STYLING FOR BUTTON ELEMENTS \\
 
-.grid-under-line {
-    width: 95%;
+.under-grid-line {
+    // width: 95%;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 10%;
+    margin-top: 5%;
+    align-items: center;
+    
 }
 
 .buttonSection {
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
 }
 
 #resetButton {

@@ -14,17 +14,24 @@ function handlePlayerTurn(clickedGridSquareIndex: number) {
   }
   gameBoard[clickedGridSquareIndex] = currentPlayer;
   currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+  if (currentPlayer === 'X') {
+    messageElement.innerHTML = "X's Turn"
+  } else {
+    messageElement.innerHTML = "O's Turn"
+  }
 }
+
 
 // Event Listeners - Adding one for each cell \\
 
-const gridSquare = document.querySelectorAll<HTMLDivElement> ('.gridSquare');
+const gridSquare = document.querySelectorAll<HTMLDivElement> ('.gridSquare')!;
 
-const messageElement = document.getElementById('gameMessage');
+const messageElement = document.getElementById('gameMessage')!;
+messageElement.innerHTML = "X Starts"
 
-if (!gridSquare || !messageElement)
-  {throw new Error('error with retrieving grid square');
-};
+// if (!gridSquare || !messageElement)
+//   {throw new Error('error with retrieving grid square');
+// };
 
 gridSquare.forEach(gridSquare => {
   gridSquare.addEventListener('click', gridSquareClicked);
@@ -42,7 +49,6 @@ resetButton?.addEventListener('click', resetGame, false);
 
 function gridSquareClicked(clickedGridEvent: Event) {
   const clickedGridSquare = clickedGridEvent.currentTarget as HTMLDivElement;
-  console.log('event listener working');
   console.log(clickedGridSquare);
   const clickedGridSquareIndex = parseInt(clickedGridSquare.id.replace('square-', '')) - 1;
 
@@ -56,7 +62,6 @@ function gridSquareClicked(clickedGridEvent: Event) {
 }
 
 function updateUI() {
-  console.log('updating UI');
   for (let i=0; i < gridSquare.length; i++) {
     gridSquare[i].innerText = gameBoard[i];
   }
@@ -92,7 +97,7 @@ function announceWinner(player:string) {
 function announceDraw() {
   // const messageElement = document.getElementById('gameMessage');
   if(messageElement && someoneHasLostOrWon === false){
-    messageElement.innerText = 'Game Draw!';
+    messageElement.innerText = "Game Draw!";
     someoneHasLostOrWon = true
   }
 };
