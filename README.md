@@ -25,7 +25,10 @@ Add score counter.
 Add Computer Oppenent. 
 JS Accordion Menu with rules etc. 
 
+
 Logic Problems - 
+
+--------------------------
 The rules for tic-tac-toe are: 
 Players: Two players take turns marking a 3x3 grid with X or O 
 Goal: The first player to get three marks in a row wins 
